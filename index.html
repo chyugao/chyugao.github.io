@@ -6,7 +6,7 @@
     <title>Academic Homepage</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
@@ -14,15 +14,15 @@
             color: #333;
         }
         h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            color: #483332;
+            padding-bottom: 5px;
+            margin-bottom: 7px;  /* 减小底部边距 */
         }
         h2 {
-            color: #2c3e50;
-            margin-top: 30px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
+            color: #483332;
+            margin-top: 10px;
+            padding-bottom: 2px;
+            margin-bottom: 5px;  /* 减小底部边距 */
         }
         a {
             color: #3498db;
@@ -41,37 +41,49 @@
         .award {
             color: #e74c3c;
         }
+        .publication-list li {
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 1px;
+        }
+        .author-name {
+        font-weight: bold;
+        color: #2c3e50;
+        }
+        .venue {
+        font-style: italic;  /* 会议名称斜体 */
+        color: #666;
+        }
     </style>
 </head>
 <body>
-    <h1>Your Name</h1>
+    <h1>Chenyu Gao</h1>
     
-    <p>Position<br>
-    Department<br>
-    University<br>
-    <span class="email">Email: your.email@university.edu</span></p>
+    <p>PhD student<br>
+    <a href="https://sist.shanghaitech.edu.cn/">School of Information Science and Technology</a><br>
+    ShanghaiTech University<br>
+    <span class="email">Email: gaochy[at]shanghaitech.edu.cn</span></p>
 
     <h2>About Me</h2>
-    <p>Brief introduction about yourself and your current position.</p>
+    <p>I am currently a PhD student in the School of School of Information Science and Technology, ShanghaiTech University. I received my B.S. degree in Mathematics (Talent Class) from Xidian University in 2020.</p>
 
     <h2>Research Interests</h2>
-    <ul>
-        <li>Research Area 1</li>
-        <li>Research Area 2</li>
-        <li>Research Area 3</li>
-    </ul>
-
-    <h2>Selected Awards</h2>
-    <ul>
-        <li class="award">Award 1</li>
-        <li class="award">Award 2</li>
-    </ul>
+    MM/EM algorithms, location-scale models, volatility models
 
     <h2>Publications</h2>
-    <div class="publication">
-        <p>Paper Title<br>
-        Authors<br>
-        Conference/Journal, Year</p>
+    <ul class="publication-list">
+        <li>
+            Beyond Jensen's Inequality: Speeding Up ML Estimation of Generalized Hyperbolic Distributions<br>
+            <span class="author-name">Chenyu Gao</span>, Ziping Zhao<br>
+            <span class="venue">The 50th IEEE International Conference on Acoustics, Speech, and Signal Processing, Hyderabad, India, April 6-11, 2025.</span>
+        </li>
+        
+        <li>
+            A Novel Algorithm for GARCH Model Estimation<br>
+            <span class="author-name">Chenyu Gao</span>, Ziping Zhao, Daniel P. Palomar<br>
+            <span class="venue">The 22nd IEEE Statistical Signal Processing Workshop, Hanoi, Vietnam, July 2-5, 2023.</span>
+        </li>
+    </ul>
     </div>
 </body>
 </html>
